@@ -1,0 +1,170 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+    color: #333;
+  }
+  
+  header {
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .header-image {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+
+  .tarjetas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+    gap: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+
+  .tarjeta-contenedor {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+  }
+  
+  .tarjeta-contenedor.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .tarjeta {
+    flex: 1 1 600px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+    padding: 25px 30px;
+    border-left: 12px solid transparent;
+    transition: transform 0.2s ease;
+  }
+  
+  .tarjeta:hover {
+    transform: translateY(-5px);
+  }
+
+  .contenido-texto h2 {
+    margin-top: 0;
+    font-size: 26px;
+    color: #444;
+    margin-bottom: 15px;
+  }
+  
+  .contenido-texto p,
+  .contenido-texto ul {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+    margin: 0;
+  }
+  
+  .contenido-texto ul {
+    padding-left: 20px;
+    margin-top: 10px;
+  }
+  
+  .contenido-texto li {
+    margin-bottom: 8px;
+  }
+  
+  .contenido-imagen {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  }
+  
+  .perfil {
+    border-left-color: #f8c8dc;
+    background-color: #fef0f5;
+  }
+  
+  .formacion {
+    border-left-color: #fff4b2;
+    background-color: #fffce2;
+  }
+  
+  .experiencia {
+    border-left-color: #d4f4dd;
+    background-color: #edfff2;
+  }
+  
+  .proyectos {
+    border-left-color: #cceeff;
+    background-color: #e8faff;
+  }
+  
+  .cursos {
+    border-left-color: #ffd6ec;
+    background-color: #fff0f7;
+  }
+  
+  .idiomas {
+    border-left-color: #b7e4c7;
+    background-color: #e6f4ea;
+  }
+  
+  .competencias {
+    border-left-color: #ffd8b1;
+    background-color: #fff3e5;
+  }
+  
+  @media (max-width: 768px) {
+    .tarjeta-contenedor,
+    .tarjeta-contenedor.reverse {
+      flex-direction: column !important;
+      align-items: center;
+      gap: 20px;
+      width: 100%;
+    }
+  
+    .tarjeta {
+      width: 100%;
+      max-width: 400px;  /* Limitar ancho máximo para evitar cuadros muy grandes */
+      padding: 20px 25px;
+      border-left-width: 8px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.07);
+      box-sizing: border-box;
+    }
+  
+    .contenido-imagen {
+        width: 50%;          /* Ocupa la mitad del ancho del contenedor */
+        max-width: 180px;    /* No crece más de 180px */
+        height: auto;
+        margin: 0 auto;      /* Centrar horizontalmente */
+        object-fit: contain;
+        order: 2;            /* Imagen debajo del texto */
+        border-radius: 15px; /* Opcional: bordes suaves para que quede más bonito */
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Opcional: sombra ligera */
+    }
+    
+  
+    .tarjeta-contenedor.reverse .contenido-imagen {
+      order: 2;
+    }
+  
+    /* Centrar tarjetas y evitar espacios laterales grandes */
+    main.tarjetas-container {
+      padding: 20px 10px;
+    }
+  }
+  
+  
+
+  
+
+  
+  
